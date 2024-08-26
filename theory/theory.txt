@@ -1,0 +1,23 @@
+currying
+
+It is a technique in functional programming, that transforms the function of multiple arguments into several functions 
+of a single argument in sequence. 
+
+Why is currying useful in JavaScript?
+
+It helps us to create a higher-order function
+It reduces the chances of error in our function by dividing it into multiple smaller functions that can handle one responsibility.
+
+Benefits of Currying:
+Partial Application:
+
+1.Currying allows you to fix some arguments of a function and get a new function in return. This is known as partial application.
+
+const add5 = curriedAdd(5);  // Creates a new function that adds 5 to whatever argument it gets
+console.log(add5(10)(15)); 
+Code Reusability:
+
+2.Curried functions can be reused and composed easily, making your code more modular and flexible.
+Avoids Repetition:
+
+3.Currying helps in creating specialized functions from general-purpose functions, reducing the need to write similar functions for slightly different use cases.
